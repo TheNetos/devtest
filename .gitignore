@@ -1,0 +1,8 @@
+/tmp/*
+/logs/*
+/build
+/.vscode
+
+Thumbs.db
+
+!/.gitignore
