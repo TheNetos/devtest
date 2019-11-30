@@ -89,4 +89,3 @@ b2 install release cxxflags=-std=c++11 link=static runtime-link=static threading
 
 - Некорретный вывод путей в не-англоязычной кодировке
 - При распознавании некоторых файлов всплывает `Invalid SOS parameters for sequential JPEG`
-- При отсутствии найденных лиц на изображении, в `result.json` выводит `""` вместо `[]`
