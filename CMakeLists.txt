@@ -10,12 +10,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(DEVTEST_LIBSDIR ${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
 # ------ Boost lib ------
-
-set(Boost_ARCHITECTURE      -x32) # lib architecture
-set(Boost_USE_STATIC_LIBS   ON)   # only find static libs
-set(Boost_USE_DEBUG_LIBS    OFF)  # ignore debug libs and
-set(Boost_USE_RELEASE_LIBS  ON)   # only find release libs
-set(Boost_USE_MULTITHREADED ON)
+set(Boost_DEBUG ON)
+set(Boost_ARCHITECTURE      -x32)
+set(Boost_USE_STATIC_RUNTIME ON)
+set(Boost_USE_STATIC_LIBS    ON)
+set(Boost_USE_DEBUG_LIBS     OFF)
+set(Boost_USE_RELEASE_LIBS   ON)
+set(Boost_USE_MULTITHREADED  ON)
 
 if(WIN32)
   # Needed for boost to turn off autolinking for dynamic linking
