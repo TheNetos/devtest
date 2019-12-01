@@ -11,8 +11,8 @@ std::vector<cv::Rect> devtest::components::faceCV(
     {
         std::cout << "[faceCV] "
                   << "Loaded image: " << path << ", mat size: " << img.size << std::endl;
-        faceCascade.detectMultiScale(img, foundFaces, 1.1, 2, 
-            0 | cv::CASCADE_SCALE_IMAGE, cv::Size(30, 30));
+        faceCascade.detectMultiScale(img, foundFaces, 1.1, 3, 
+            0 | cv::CASCADE_SCALE_IMAGE, cv::Size(40, 40));
         std::cout << "[faceCV] "
                   << "Founded " << foundFaces.size() << " faces" << std::endl;
                   
