@@ -42,14 +42,14 @@
 
 ## Библиотеки
 
-* Boost v1.70, static multithread release
+* Boost v1.76, static multithread release
   * system
   * filesystem
   * container 
   * thread 
   * log
   * program_options
-* OpenCV v4.1.12, static release
+* OpenCV v4.2.0, static release
   * FFMpeg
   * PNG
   * TIFF
