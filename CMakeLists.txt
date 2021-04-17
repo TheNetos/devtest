@@ -21,11 +21,12 @@ set(Boost_USE_MULTITHREADED  ON)
 if(WIN32)
   # Needed for boost to turn off autolinking for dynamic linking
   add_definitions(-DBOOST_ALL_NO_LIB)
+  set(BOOST_ROOT ${DEVTEST_LIBSDIR}/win32/boost)
 endif()
 
 # add_definitions(-DBOOST_LOG_DYN_LINK)
 
-find_package(Boost 1.70 REQUIRED COMPONENTS system container program_options thread log)
+find_package(Boost 1.76 REQUIRED COMPONENTS system container program_options thread log)
 include_directories(${Boost_INCLUDE_DIRS})
 if (NOT Boost_FOUND)
     message(FATAL_ERROR "Boost library not found in '${BOOST_ROOT}'")    
