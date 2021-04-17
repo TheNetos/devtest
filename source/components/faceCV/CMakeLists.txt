@@ -5,6 +5,7 @@ project(faceCV VERSION 1.0)
 # ------- OpenCV --------
 
 set(OpenCV_STATIC ON) # find static libs
+set(OpenCV_DIR ${DEVTEST_LIBSDIR}/win32/opencv)
 find_package(OpenCV REQUIRED)
 
 # -----------------------
